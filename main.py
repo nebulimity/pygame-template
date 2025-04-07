@@ -22,15 +22,11 @@ def main():
     screen = init_game()
     clock = pygame.time.Clock()
 
-    
-
     running = True
     while running:
         running = handle_events()
-        screen.fill(config.WHITE)
+        screen.fill((255, 255, 255))
 
-        
-        
         pygame.display.flip()
         clock.tick(config.FPS)
 
